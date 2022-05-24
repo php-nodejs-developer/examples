@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/vuex">Vuex</router-link> |
-    <router-link to="/images">Images</router-link> |
+    <router-link to="/images">Images</router-link>
   </div>
   <router-view/>
 </template>
