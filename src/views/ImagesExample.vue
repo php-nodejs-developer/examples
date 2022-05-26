@@ -1,6 +1,8 @@
 <template>
   <img :src="random" alt="random">
+
   <img src="@/assets/bubbles.jpg" alt="bubbles">
+
   <img :src="require(`../assets/${summer}`)" :alt="summer">
 </template>
 <script>

@@ -44,13 +44,21 @@ export default {
           : this.$store.getters.byFirstLetter(this.currentLetter); // доступ к геттерам
     }
   },
+
   methods: {
     /*checkVisited(country) {
       this.$store.commit('changeState', country);
     },*/
+
+    // ...mapMutations(['changeState'])
+    // мутация с именем changeState становится одним из метдов компонента
+
+    // @click="checkVisited(country)
     ...mapMutations({
-      checkVisited: 'changeState'
+      // обращение к мутации в текущем компоненте:  имя мутации во vuex
+       checkVisited: 'changeState'
     }),
+
     ...mapActions(['addToList'])
   }
 }
